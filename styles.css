@@ -27,7 +27,6 @@ body {
     padding: 80px 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .logo {
