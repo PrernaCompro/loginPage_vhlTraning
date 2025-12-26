@@ -21,52 +21,45 @@
       </div>
 
       <div class="right-section">
-          <div class="request-account">
+        <div class="request-account">
+          Not a member? <a href="#">Request an Account</a>
+        </div>
+
+        <div class="login-card">
+          <h2 class="login-title">Sign in</h2>
+
+          <form>
+            <div class="form-group">
+              <label for="email" class="visually-hidden">Email</label>
+              <input id="email" type="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <div class="input-wrapper">
+                <label for="password" class="visually-hidden">Password</label>
+                <input class="js-password" type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePassword()">&#128065</span>
+              </div>
+            </div>
+
+            <div class="forgot-password">
+              <a href="#">FORGOT PASSWORD</a>
+            </div>
+
+            <button type="submit" class="login-button">LOGIN</button>
+
+            <div class="signup-link">
               Not a member? <a href="#">Request an Account</a>
-          </div>
-
-          <div class="login-card">
-              <h2 class="login-title">Sign in</h2>
-
-              <form>
-                  <div class="form-group">
-                      <input type="email" id="email" placeholder="Email" required>
-                  </div>
-
-                  <div class="form-group">
-                      <div class="input-wrapper">
-                          <input type="password" id="password" placeholder="Password" required>
-                          <span class="toggle-password" onclick="togglePassword()">&#128065</span>
-                      </div>
-                  </div>
-
-                  <div class="forgot-password">
-                      <a href="#">FORGOT PASSWORD</a>
-                  </div>
-
-                  <button type="submit" class="login-button">LOGIN</button>
-
-                  <div class="signup-link">
-                      Not a member? <a href="#">Request an Account</a>
-                  </div>
-              </form>
-          </div>
-          <div class="footer">
-              © 2021 Compro Technologies All Rights Reserved
-          </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          © 2021 Compro Technologies All Rights Reserved
+        </div>
       </div>
     </div>
   </div>
 
-  <script>
-    function togglePassword() {
-      const passwordInput = document.getElementById('password');
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-      } else {
-        passwordInput.type = 'password';
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
